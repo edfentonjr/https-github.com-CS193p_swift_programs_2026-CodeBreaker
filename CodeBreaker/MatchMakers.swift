@@ -18,17 +18,19 @@ struct MatchMakers: View {
     
     var body: some View {
         
-        HStack {
-            VStack {
+        VStack {
+            HStack {
                 matchMarkers(peg: 0)
                 matchMarkers(peg: 1)
+                matchMarkers(peg: 2)
                 
                 
             }
-            VStack {
+            HStack {
                 
-                matchMarkers(peg: 2)
                 matchMarkers(peg: 3)
+                matchMarkers(peg: 4)
+                matchMarkers(peg: 5)
               
             }
         }
@@ -58,7 +60,7 @@ struct MatchMakers: View {
 
 
 #Preview {
-    MatchMakers(matches: [.exact, .inexact, .nomatch, .exact])
+    MatchMakers(matches: [.exact, .exact, .exact, .exact, .exact, .exact])
    
 }
 
